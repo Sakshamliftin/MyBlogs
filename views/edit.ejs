@@ -1,0 +1,23 @@
+<form action="/edit/<%= blogKey %>" method="POST">
+  <div class="form-group">
+    <label for="author_new">Author Name:</label>
+    <input type="text" id="author_new" name="author_new" value="<%= blog.author %>" required>
+  </div>
+
+  <div class="form-group">
+    <label for="title_new">Blog Title:</label>
+    <input type="text" id="title_new" name="title_new" value="<%= blog.title %>" required>
+  </div>
+
+  <div class="form-group">
+    <label for="subject_new">Blog Subject:</label>
+    <input type="text" id="subject_new" name="subject_new" value="<%= blog.subject %>" required>
+  </div>
+
+  <div class="form-group">
+    <label for="body_new">Blog Body:</label>
+    <textarea id="body_new" name="body_new" rows="6" required><%= blog.body %></textarea>
+  </div>
+
+  <button type="submit">Update Blog</button>
+</form>

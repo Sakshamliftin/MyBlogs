@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Blog - My Blogs</title>
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/content.css">
+</head>
+
+<body
+  style="background-image: url(/Images/new-blog-background.webp); background-repeat: none; background-size: cover;  ">
+  <%- include('partials/header.ejs') %>
+
+    <div class="new-blog-container">
+      <h1>Create a New Blog</h1>
+
+      <form action="/submit" method="POST">
+        <!-- Name -->
+        <div class="form-group">
+          <label for="author_new">Author Name:</label>
+          <input type="text" id="author_new" name="author_new" placeholder="Your Name" required>
+        </div>
+
+        <!-- Title -->
+        <div class="form-group">
+          <label for="title_new">Blog Title:</label>
+          <input type="text" id="title_new" name="title_new" placeholder="Blog Title" required>
+        </div>
+
+        <!-- Subject -->
+        <div class="form-group">
+          <label for="subject_new">Blog Subject:</label>
+          <input type="text" id="subject_new" name="subject_new" placeholder="Subject" required>
+        </div>
+
+        <!-- Image Upload -->
+        <!-- <div class="form-group">
+          <label for="image">Upload Image:</label>
+          <input type="file" id="image" name="image" accept="image/*">
+        </div> -->
+
+        <!-- Blog Body -->
+        <div class="form-group">
+          <label for="body_new">Blog Body:</label>
+          <textarea id="body_new" name="body_new" rows="6" placeholder="Write your blog content here..."
+            required></textarea>
+        </div>
+
+        <button type="submit">Create Blog</button>
+      </form>
+    </div>
+
+    <%- include("partials/footer.ejs") %>
+</body>
+
+</html>

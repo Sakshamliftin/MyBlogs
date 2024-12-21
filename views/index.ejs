@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/content.css">
+</head>
+
+<body style="background-image: url(/Images/home-background.jpeg); background-repeat: none; background-size: cover;  ">
+  <%- include('partials/header.ejs') %>
+    <div class="heading-container">
+      <h1 class="welcome-text">Welcome to Myblogs</h1>
+      <form action="/new">
+        <button type="submit"><img class="add-icon" src="Images/add-icon.png">New</button>
+      </form>
+
+    </div>
+
+    <div class="main-body">
+      <% Object.entries(blogs).forEach(([blogKey, blog])=> { %>
+        <div class="blog-container">
+          <div class="side-info">
+            <h1 class="author-name">
+              <%= blog.author %>
+            </h1>
+            <h3 class="date-time">
+              <%= blog.date %>
+                <br>
+                <%= blog.time %>
+            </h3>
+          </div>
+          <div class="main-info">
+            <h1 class="blog-title">
+              <%= blog.title %>
+            </h1>
+            <h2 class="blog-subject">
+              <%= blog.subject %>
+            </h2>
+            <br>
+            <p>
+              <%= blog.body %>
+            </p>
+          </div>
+          <div class="side-info">
+            <img class="blog-image" src="Images\istockphoto-1477183258-1024x1024.jpg" alt="">
+          </div>
+
+          <!-- <a href="/blog/" class="view-blog-btn">View Full Blog</a> -->
+          <div class="modals">
+            <form action="/delete" onsubmit="return confirm('Are you sure you want to delete this blog?');"
+              method="POST">
+              <input type="hidden" name="blogKey" value="<%= blogKey %>">
+              <button type="submit" class="delete-modal"><img src="Images/delete-icon.svg" alt=""
+                  class="delete-icon">Delete</button>
+            </form>
+            <a href="/edit/<%= blogKey %>" class="edit-modal">
+              <img src="Images/edit-icon.svg" alt="" class="edit-icon">Edit
+            </a>
+
+
+          </div>
+
+
+        </div>
+        <% }); %>
+
+    </div>
+
+
+
+
+    <%- include("partials/footer.ejs") %>
+</body>
+
+</html>

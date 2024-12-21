@@ -1,0 +1,289 @@
+.blog-container {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  color:white;
+  width: 80% ;
+  display: flex ;
+  flex-direction: column ;
+  align-items: center ;
+  justify-content: center ;
+  border: 2px solid #262626 ;
+  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 80%;
+  height: 300px; /* Fixed height */
+  border: 1px solid #ccc;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.add-icon{
+  /* background-color: aliceblue; */
+  /* border: 2px solid #262626; */
+  border-radius: 36px;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+}
+.heading-container button{
+  font-size: x-large;
+  border-radius: 15px;
+  margin-right: 200px;
+}
+.heading-container button:hover{
+  background-color: rgb(217, 223, 227);
+  
+}
+
+.heading-container {
+  width:90%;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between; /* Space out the items */
+  align-items: center; /* Vertically center the items */
+}
+
+.welcome-text {
+  margin-top: 120px;
+  margin-bottom: 100px;
+  flex-grow: 1; /* Ensures the heading takes available space and stays in the center */
+  text-align: center; /* Center the heading text */
+  font-size: 60px;
+  text-decoration: underline;
+  color: rgb(234, 248, 37);
+}
+
+.delete-icon{
+  height: 30px;
+  width:30px;
+  
+}
+
+.blog-container{
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+}
+
+.side-info .author-name{
+  font-size: x-large;
+}
+.side-info .date-time{
+  font-size: large;
+}
+
+.new-blog-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  padding: 40px;
+  margin-top: 300px;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  width:40%;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  margin: 550px;
+
+}
+.new-blog-container h1{
+  font-size: 50px;
+  color: #96baef;
+  margin-bottom:50px;
+}
+.new-blog-container form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* background-color: white; */
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  font-size:larger;
+  margin-bottom:50px ;
+
+}
+.new-blog-container button{
+  background-color: greenyellow;
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+}
+.new-blog-container button:hover{
+  background-color: rgb(142, 217, 30);
+}
+
+/* contact route css */
+.contact-container{
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  padding: 40px;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  width:40%;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  margin-left: 550px;
+  margin-bottom: 50px;
+
+}
+.contact-container h1{
+  font-size: 50px;
+  color: #96baef;
+  font-weight: 700;
+  /* text-decoration: underline; */
+  margin-bottom:50px;
+}
+.contact-container form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* background-color: white; */
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  font-size:larger;
+  margin-bottom:50px ;
+
+}
+.contact-container button{
+  background-color: rgb(142, 217, 30);
+  
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+}
+.contact-container button:hover{
+  background-color: #04AA6D;
+}
+
+
+.blog-detail-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.blog-detail-container h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.blog-detail-container h3 {
+  font-size: 1.5em;
+  color: #666;
+}
+
+.blog-detail-container h4 {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #777;
+}
+
+.blog-image {
+  width: 100%;
+  width:350px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.blog-body {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+}
+
+.main-info{
+  margin: 5px;
+  margin-left: 19px;
+}
+
+.main-body{
+  margin-bottom: 100px;
+}
+.delete-modal{
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  margin:5px
+}
+.delete-modal:hover{
+  background-color: rgb(222, 3, 3);
+}
+.edit-modal{
+  display: flex;
+  flex-direction: row;
+  background-color: #0d6efd;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  margin:5px
+}
+.edit-modal:hover{
+  background-color: #0755ca;
+}
+.edit-modal img{
+  height:25px;
+  margin:2px  
+
+}
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-card{
+  border: 2px solid black;
+  width:25%;
+  height:350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+  gap:15px;
+  padding: 10px;
+}
+
+.testimonial-card img{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+#image-gallery{
+  display: flex;
+  flex-direction: row;
+}
+#image-gallery video{
+  height: 200px;
+  width: 200px;
+  margin:10px;
+}
+#image-gallery img{
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}

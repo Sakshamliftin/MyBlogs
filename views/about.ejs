@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - My Blogs</title>
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/content.css">
+</head>
+
+<body
+  style="background-image: url(/Images/pexels-pixabay-262508.jpg); background-repeat: none; background-size: cover;  ">
+  <%- include('partials/header.ejs') %>
+    <div class="about-container">
+      <header>
+        <h1>Welcome to My Blogs!</h1>
+        <p>This is a platform where you can read and share interesting blog posts. Our goal is to provide a space for
+          passionate writers to express their thoughts and connect with readers worldwide. Feel free to browse through
+          our
+          blog posts and stay tuned for more exciting content.</p>
+      </header>
+
+      <section id="vision">
+        <h2>Our Vision</h2>
+        <p>We believe in the power of storytelling and the beauty of shared experiences. My Blogs is a community where
+          writers can showcase their creativity, and readers can discover diverse perspectives from all walks of life.
+        </p>
+      </section>
+
+      <section id="offer">
+        <h2>What We Offer</h2>
+        <ul>
+          <li>A <strong>dynamic collection of blog posts</strong> spanning a variety of topics, including travel,
+            technology, lifestyle, self-improvement, and more.</li>
+          <li><strong>Opportunities for writers</strong> to share their voice with a global audience.</li>
+          <li>A platform that encourages <strong>meaningful interactions</strong> between writers and readers.</li>
+        </ul>
+      </section>
+
+      <section id="why-choose-us">
+        <h2>Why Choose My Blogs?</h2>
+        <ul>
+          <li><strong>User-Friendly Interface</strong>: Navigate seamlessly and discover content that resonates with
+            you.
+          </li>
+          <li><strong>Creative Freedom</strong>: Writers can freely express their thoughts without restrictions.</li>
+          <li><strong>Diverse Community</strong>: Engage with a global audience and enjoy content from various cultures
+            and perspectives.</li>
+          <li><strong>Continuous Improvements</strong>: We're committed to evolving and enhancing your experience.</li>
+        </ul>
+      </section>
+
+      <section id="get-involved">
+        <h2>Get Involved</h2>
+        <p>Are you passionate about writing? Join us today! Share your unique stories, insights, and experiences.</p>
+        <p>Not a writer? No problem! Browse our curated blog posts, leave comments, and connect with like-minded
+          individuals.</p>
+      </section>
+      <section id="testimonial-cards">
+        <h2>Testimonials</h2>
+        <div class="card-container">
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <img src="/Images/female-icon.jpeg" alt="Profile Picture of Anna T." class="profile-picture">
+            <h3>Anna T.</h3>
+            <h4>Subject: A Fantastic Platform</h4>
+            <p>"My Blogs is my favorite platform for both reading and writing. It’s incredibly easy to use, and the
+              community is amazing."</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <img src="/Images/male-icon.jpeg" alt="Profile Picture of James L." class="profile-picture">
+            <h3>James L.</h3>
+            <h4>Subject: Great Support for Writers</h4>
+            <p>"As a writer, I’ve found a supportive and engaging audience here. I love it!"</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <img src="/Images/female-icon.jpeg" alt="Profile Picture of Sarah P." class="profile-picture">
+            <h3>Sarah P.</h3>
+            <h4>Subject: Wonderful Community</h4>
+            <p>"The community on My Blogs is incredibly welcoming and interactive. I always feel inspired after reading
+              posts here."</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="testimonial-card">
+            <img src="/Images/male-icon.jpeg" alt="Profile Picture of Michael R." class="profile-picture">
+            <h3>Michael R.</h3>
+            <h4>Subject: Easy to Use</h4>
+            <p>"I love how simple and intuitive the platform is. It makes reading and writing blogs so enjoyable."</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="team">
+        <h2>Meet the Team</h2>
+        <p>Our team is composed of passionate individuals who work tirelessly to make My Blogs a welcoming and enjoyable
+          space for everyone.</p>
+      </section>
+
+      <section id="image-gallery">
+        <h2>Image Gallery</h2>
+        <div class="image-placeholder">
+          <video src="/Images/4746616-uhd_3840_2160_30fps.mp4" muted loop autoplay
+            alt="Collaborating on creative projects">
+        </div>
+        <div class="image-placeholder">
+          <img src="/Images/pexels-andrew-3178818.jpg" alt="Diverse group of readers and writers">
+        </div>
+        <div class="image-placeholder">
+          <img src="/Images/pexels-drew-williams-1285451-3098619.jpg"
+            alt="Blog post being written on a modern interface">
+        </div>
+      </section>
+
+      <section id="stay-connected">
+        <h2>Stay Connected</h2>
+        <p>Follow us on social media to get updates on new blog posts, features, and events.</p>
+      </section>
+    </div>
+
+    <%- include("partials/footer.ejs") %>
+</body>
+
+</html>
