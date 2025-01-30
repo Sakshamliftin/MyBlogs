@@ -27,7 +27,7 @@ In the future, BlogApp will integrate advanced features like:
 
 ## Technology Stack  
 - **Frontend**: HTML, CSS, JavaScript  
-- **Backend**: Node.js, Express.js  
+- **Backend**: Node.js, Express.js , Postgres
 - **Templating Engine**: EJS  
 
 ---
